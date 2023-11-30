@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: rgb(229, 229, 229);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  padding: 0 0.5rem;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__list-item:first-child {
+  font-size: 2rem;
+}
+
+.navbar__list-item:not(:first-child) {
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.navbar__list-item {
+  font-weight: 700;
+  padding: 0.75rem;
+}
+
+.profile,
+.portfolio {
+  max-width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio {
+  color: #4a4a4a;
+}
+
+.profile {
+  color: grey;
+}
