@@ -146,8 +146,12 @@ footer p:first-child {
   margin-right: auto;
 }
 
-.footer p {
+footer p:not(:first-child) {
   display: none;
+}
+
+footer p:nth-child(3){
+  display: block;
 }
 
 footer p:not(:first-child) {
@@ -168,10 +172,10 @@ footer p:not(:first-child) {
   footer {
     padding: 0 2.5rem;
   }
-  footer p {
+  footer p:not(:first-child) {
     display: block;
   }
-  .footer-mobile {
+  footer p:nth-child(3) {
     display: none;
   }
 }
