@@ -1,3 +1,5 @@
+/* Basic Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -38,6 +40,8 @@ h3 {
   font-size: 1.25rem;
 }
 
+/* Navbar */
+
 .navbar {
   padding: 0 2.5rem;
   color: white;
@@ -63,23 +67,28 @@ h3 {
   text-transform: uppercase;
 }
 
-.profile {
-  padding: 0 2.5rem;
+/* Profile */
+
+.profile-container {
+  padding: 0 1.5rem;
 }
 
-.profile article {
+.profile {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
-.profile article p {
+.profile p {
   max-width: 500px;
   color: white;
   font-size: 1.125rem;
 }
+
+/* Portfolio */
 
 .portfolio-container {
   display: flex;
@@ -106,12 +115,22 @@ h3 {
   font-size: 0.875rem;
 }
 
+/* Skills */
+
+.skills {
+  text-align: center;
+}
+
+/* Contact */
+
 .contact {
-    padding: 1rem;
+  padding: 1rem;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
+
+/* Footer */
 
 footer {
   display: flex;
@@ -127,7 +146,7 @@ footer p:first-child {
   margin-right: auto;
 }
 
-footer p:not(:nth-child(3)):not(:first-child) {
+.footer p {
   display: none;
 }
 
@@ -135,29 +154,28 @@ footer p:not(:first-child) {
   text-transform: uppercase;
 }
 
+/* Media Queries */
+
 @media only screen and (min-width: 768px) {
-  .project {
-    width: calc(50% - 1rem);
-  }
-  .profile article {
+  .profile {
     flex-direction: row-reverse;
     text-align: left;
+  }
+  .project {
+    width: calc(50% - 1rem);
   }
   footer {
     padding: 0 2.5rem;
   }
-  footer p:not(:nth-child(3)):not(:first-child) {
+  footer p {
     display: block;
   }
-  footer p:nth-child(3) {
+  .footer-mobile {
     display: none;
   }
 }
 
 @media only screen and (min-width: 940px) {
-  .portfolio {
-    margin-inline: 2.5rem;
-  }
   .navbar__list {
     flex-direction: row;
     text-align: center;
@@ -166,6 +184,12 @@ footer p:not(:first-child) {
   }
   .navbar__list-item:first-child {
     margin-right: auto;
+  }
+  .profile-container {
+    padding: 0 2.5rem;
+  }
+  .portfolio {
+    margin-inline: 2.5rem;
   }
 }
 
