@@ -176,6 +176,8 @@ footer p:not(:first-child) {
   }
 }
 
+/* added 940 media query to ensure that the transition between the layouts isn't as harsh as it was previously */
+
 @media only screen and (min-width: 940px) {
   .navbar__list {
     flex-direction: row;
