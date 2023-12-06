@@ -199,9 +199,11 @@ footer p:not(:first-child) {
   }
 }
 
-/* added 940 media query to ensure that the transition between the layouts isn't as harsh as it was previously */
-
-@media only screen and (min-width: 940px) {
+@media only screen and (min-width: 1024px) {
+  /* This could be done with grid. Much easier.. */
+  .project {
+    width: calc(33% - 1rem);
+  }
   .navbar__list {
     flex-direction: row;
     text-align: center;
@@ -220,12 +222,5 @@ footer p:not(:first-child) {
   }
   .portfolio {
     margin-inline: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  /* This could be done with grid. Much easier.. */
-  .project {
-    width: calc(33% - 1rem);
   }
 }
